@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "Anti-Trends",
+  "version": "0.0.1",
+  "description": "Removes Xitter Trends from your Timeline",
+  "author": "Keanu",
+  "action": {
+  },
+  "content_scripts": [
+    {
+    "run_at": "document_end",
+    "matches": [
+      "https://twitter.com/*",
+      "https://mobile.twitter.com/*",
+      "https://tweetdeck.twitter.com/*",
+      "https://x.com/*"
+    ],
+    "css": [
+      "hide.css"
+    ]
+    }
+  ]
+}

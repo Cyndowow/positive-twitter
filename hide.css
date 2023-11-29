@@ -1,0 +1,7 @@
+div:has(> section[aria-labelledby="accessible-list-0"]) {
+  display: none;
+}
+
+div:has(>aside[aria-label="Subscribe to Premium"]) {
+  display: none;
+}
